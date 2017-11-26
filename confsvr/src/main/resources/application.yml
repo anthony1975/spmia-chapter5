@@ -10,6 +10,21 @@
 
 
 ####################################
+#server:
+#  port: 8888
+#spring:
+#  cloud:
+#    config:
+#      discovery:
+#        enabled: true
+#      server:
+#        encrypt.enabled: false
+#        git:
+#          uri: https://github.com/carnellj/config-repo/
+#          searchPaths: licensingservice,organizationservice
+#          username: native-cloud-apps
+#          password: 0ffended
+
 server:
   port: 8888
 spring:
@@ -18,13 +33,12 @@ spring:
       discovery:
         enabled: true
       server:
-        encrypt.enabled: false
+        encrypt.enabled: true
         git:
-          uri: https://github.com/carnellj/config-repo/
+          uri: https://github.com/anthony1975/config-repo/
           searchPaths: licensingservice,organizationservice
-          username: native-cloud-apps
-          password: 0ffended
-
+          username: anthony1975
+          password: anthony44
 
 ####
 #Classpath and file-based solution
